@@ -1,7 +1,8 @@
 import Money from "./classes/Money"
 import Product from "./classes/Product"
 import Warehouse from "./classes/Warehouse"
-import { Category, Currency } from "./classes/helpers/Enums"
+import { Category, Currency, ReporterMsgState } from "./classes/helpers/Enums"
+import ReporterMsg from "./classes/helpers/ReporterMsg"
 
 const money = new Money(12, 0.5, Currency.Dollar)
 money.addAmount(120, 0)
@@ -13,7 +14,7 @@ const warehouse = new Warehouse()
 warehouse.addProduct(product)
 warehouse.getWarehouseInfo()
 
-for (let i = 0; i < 3; i++) {
-    warehouse.addProduct(product)
-}
+warehouse.addProduct(product, 3)
 warehouse.getWarehouseInfo()
+
+warehouse.getReports()

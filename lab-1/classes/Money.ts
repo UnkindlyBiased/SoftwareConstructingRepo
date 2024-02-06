@@ -13,7 +13,7 @@ export default class Money {
     moneyOutput(): string {
         return `${this.currency} ${this.whole + this.fractional}`
     }
-    addAmount(setWhole, setFractional) {
+    addAmount(setWhole, setFractional) : void {
         this.whole += Math.floor(setWhole)
         this.fractional += setFractional
     }

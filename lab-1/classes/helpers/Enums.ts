@@ -1,5 +1,11 @@
 enum Category {
-    Grocery
+    Grocery,
+    Electronics,
+    Apparel,
+    Literature,
+    Health,
+    Automotive,
+    Tools
 }
 
 enum Currency {
@@ -9,4 +15,9 @@ enum Currency {
     Pound = "GBP"
 }
 
-export {Category, Currency}
+enum ReporterMsgState {
+    Shipped = "shipped from",
+    Added = "added to"
+}
+
+export {Category, Currency, ReporterMsgState}
