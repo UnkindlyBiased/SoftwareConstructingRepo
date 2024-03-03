@@ -12,7 +12,7 @@ export default class Warehouse {
         this.reporter = new Reporting()
     }
 
-    addProduct(product: Product, amount?: number) : void {
+    addProduct(product: Product, amount?: number): void {
         const isProductAvailable = this.localProducts.has(product)
         if (isProductAvailable) {
             const productAmount = this.localProducts.get(product)!
@@ -25,13 +25,13 @@ export default class Warehouse {
         this.reporter.productLoadingMessage(product, amount)
     }
 
-    getWarehouseInfo() : void {
+    getWarehouseInfo(): void {
         for (let [key, value] of this.localProducts) {
             console.log(`${key.getName()} - ${value} units`)
         }
     }
 
-    private updateShippingDate() : void {
+    private updateShippingDate(): void {
         this.lastAdditionDate = new Date()
     }
 

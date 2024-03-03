@@ -10,7 +10,7 @@ export default class Product {
         return this.name
     }
 
-    constructor(name, category, price) {
+    constructor(name: string, category: Category, price: Money) {
         this.name = name
         this.category = category
         this.price = price

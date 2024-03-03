@@ -6,7 +6,6 @@
   "scripts": {
     "start": "npx tsx script.ts"
   },
-  "type": "module",
   "author": "UnkindlyBiased",
   "license": "ISC",
   "dependencies": {

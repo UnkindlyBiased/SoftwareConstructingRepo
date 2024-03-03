@@ -1,8 +1,7 @@
 import Money from "./classes/Money"
 import Product from "./classes/Product"
 import Warehouse from "./classes/Warehouse"
-import { Category, Currency, ReporterMsgState } from "./classes/helpers/Enums"
-import ReporterMsg from "./classes/helpers/ReporterMsg"
+import { Category, Currency } from "./classes/helpers/Enums"
 
 const money = new Money(12, 0.5, Currency.Dollar)
 money.addAmount(120, 0)
